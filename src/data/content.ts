@@ -52,7 +52,7 @@ export const photoCategories: { name: string; photos: Photo[] }[] = [
   {
     name: 'First photo together',
     photos: [
-      { src:photos/firstpic.jpeg, caption: 'The very first one' },
+      { src: '/photos/firstpic.jpeg', caption: 'The very first one' },
     ],
   },
   {
