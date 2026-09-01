@@ -71,7 +71,7 @@ export const photoCategories: { name: string; photos: Photo[] }[] = [
   {
     name: 'Random memories',
     photos: [
-      { src: null, caption: 'Just because' },
+      { src:WhatsApp Image 2026-08-24 at 8.15.55 PM.jpeg, caption: 'Just because' },
     ],
   },
 ]
