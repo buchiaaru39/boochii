@@ -1,0 +1,78 @@
+@import "tailwindcss" source("../");
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --plum: #3a2436;
+  --plum-deep: #1c1220;
+  --plum-soft: #6b4a63;
+  --pink-soft: #e9c3c9;
+  --warm-white: #f7ede8;
+  --champagne: #d9b98a;
+  --gold: #c9a35c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  background: var(--plum-deep);
+  color: var(--warm-white);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.font-serif-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+::selection {
+  background: var(--champagne);
+  color: var(--plum-deep);
+}
+
+/* subtle scrollbar to match the mood */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--plum-soft);
+  border-radius: 999px;
+}
+
+@keyframes heartGlow {
+  0%, 100% { filter: drop-shadow(0 0 12px rgba(201, 163, 92, 0.35)) drop-shadow(0 0 28px rgba(233, 195, 201, 0.25)); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 26px rgba(201, 163, 92, 0.6)) drop-shadow(0 0 46px rgba(233, 195, 201, 0.4)); transform: scale(1.045); }
+}
+.animate-heart-glow {
+  animation: heartGlow 5.5s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.4; }
+  100% { transform: translateY(-110vh) translateX(var(--drift, 20px)); opacity: 0; }
+}
+.floating-particle {
+  animation: floatUp linear infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
