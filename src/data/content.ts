@@ -6,7 +6,7 @@
 // ─────────────────────────────────────────────────────────────────────────
 
 // The passcode he types to enter the site. Change it any time.
-export const SITE_PASSCODE = 'hellokitty'
+export const SITE_PASSCODE = 'aaru'
 
 // ── HOME SCREEN ────────────────────────────────────────────────────────
 export const home = {
