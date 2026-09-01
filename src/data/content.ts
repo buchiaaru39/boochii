@@ -88,7 +88,7 @@ export const songSections: { name: string; songs: Song[] }[] = [
     songs: [{ title: 'Add our song', subtitle: 'Tap to add a Spotify link', spotifyUrl: null }],
   },
   {
-    name: 'Songs that remind me of her',
+    name: 'Songs that remind me of him',
     songs: [
       { title: 'Add a song', subtitle: 'Tap to add a Spotify link', spotifyUrl: null },
     ],
